@@ -73,6 +73,7 @@
                 <div class="col-12 form-group row p-form-in-cont">
                     <label for="input-skus" class="col-6 col-form-label p-form-in-label">NUMBER OF SKUS</label>
                     <div class="col-6">
+                        <!--
                         <input 
                             type="number" 
                             id="input-skus" 
@@ -84,11 +85,22 @@
                             onchange="try{setCustomValidity('')}catch(e){}"
                             required
                             >
+                        -->
+                        <select class = "form-select p-form-in" id="input-skus" name="Skus" required>
+                            <option class="p-form-opt" value="SKU T0">less than 100</option>
+                            <option class="p-form-opt" value="SKU T1">100 - 500</option>
+                            <option class="p-form-opt" value="SKU T2">501 - 1,000</option>
+                            <option class="p-form-opt" selected value="SKU T3">1,001 - 5,000</option>
+                            <option class="p-form-opt" value="SKU T4">5,001 - 20,000</option>
+                            <option class="p-form-opt" value="SKU T5">20,001 - 100,000</option>
+                            <option class="p-form-opt" value="SKU T6">more than 100,001</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-12 form-group row p-form-in-cont">
                     <label for="input-revenue" class="col-6 col-form-label p-form-in-label">REVENUE LAST YEAR</label>
                     <div class="col-6">
+                        <!--
                         <input 
                             type="number" 
                             id="input-revenue" 
@@ -100,6 +112,15 @@
                             onchange="try{setCustomValidity('')}catch(e){}"
                             required 
                             >
+                        -->
+                        <select class = "form-select p-form-in" id="input-revenue" name="Revenue" required>
+                            <option class="p-form-opt" value="REV T0">less than $50,000</option>
+                            <option class="p-form-opt" value="REV T1">$50,001 - $100,000</option>
+                            <option class="p-form-opt" selected value="REV T2">$100,001 - $500,000</option>
+                            <option class="p-form-opt" value="REV T3">$500,001 - $5,000,000</option>
+                            <option class="p-form-opt" value="REV T4">$5,000,001 - $20,000,000</option>
+                            <option class="p-form-opt" value="REV T5">greater than $20,000,000</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-12 form-group row p-form-in-cont">
@@ -163,7 +184,7 @@
 
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <button type="submit" class="btn-schedule-call">SCHEDULE A CALL</button>
+                        <button type="submit" id="p-submit-btn" class="btn-schedule-call">SCHEDULE A CALL</button>
                     </div>
                 </div>
             </form>
@@ -180,6 +201,9 @@
             const form = document.getElementById('p-form');
             form.addEventListener("submit", function(e) {
                 e.preventDefault();
+                const button = document.getElementById('p-submit-btn');
+                button.disabled = true;
+                button.textContent = 'Submitting...';
                 const data = new FormData(form);
                 const action = e.target.action;
                 fetch(action, { method: 'POST', body: data, })

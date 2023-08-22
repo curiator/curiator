@@ -80,9 +80,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 order-1 order-lg-2">
-                    <!--
-                    -->
-                    <video class="video" autoplay loop muted onclick="this.muted ? this.muted = false : this.muted = true; arguments[0].preventDefault();">
+                    <video class="video" autoplay loop muted controls onclick="this.muted ? this.muted = false : this.muted = true; arguments[0].preventDefault();">
                         <source src="./assets/videos/intro.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -96,6 +94,9 @@
             const form = document.getElementById('email-form');
             form.addEventListener("submit", function(e) {
                 e.preventDefault();
+                const button = document.getElementById('input-button');
+                button.disabled = true;
+                button.textContent = 'Submitting...';
                 const data = new FormData(form);
                 const action = e.target.action;
                 fetch(action, { method: 'POST', body: data, })
