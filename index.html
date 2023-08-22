@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>FlexStart Bootstrap Template - Index</title>
+  <title>Curiate</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,10 +22,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg mb-lg-5"> 
+    <nav class="navbar navbar-expand-lg mt-lg-3 mb-lg-5"> 
         <div class="container container-lg-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img id="navbar-logo" src="assets/images/curiate-full.png" alt="">
+                <img id="navbar-logo" src="assets/images/logo-no-name.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </nav>
-    <section class="d-flex align-items-center my-lg-5">
+    <section class="d-flex align-items-center my-lg-5 py-lg-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 d-flex flex-column justify-content-around order-2 order-lg-1">
@@ -49,14 +49,23 @@
                         <p id="brand-description">YOUR GENERATIVE AI PERSONAL SHOPPER</p>
                     </div>
                     <div class="mb-lg-5 pb-lg-5 my-4">
-                        <form class="d-flex flex-column align-items-center">
+                        <form class="d-flex flex-column align-items-center" id="email-form">
                             <div class="col">
                                 <label for="input-email" class="form-label" id="email-label">SIGN UP FOR FREE DOWNLOAD</label>
                             </div>
                             <div class="col">
                                 <div class="row">
                                     <div class="col-lg-7"> 
-                                        <input type="email" class="form-control form-control-lg" id="input-email" placeholder="ENTER EMAIL"> 
+                                        <input 
+                                        type="email" 
+                                        class="form-control form-control-lg" 
+                                        id="input-email" 
+                                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
+                                        placeholder="ENTER EMAIL"
+                                        oninvalid="setCustomValidity('Please enter a valid email address of the form example@example.com')"
+                                        onchange="try{setCustomValidity('')}catch(e){}"
+                                        required
+                                        > 
                                     </div> 
                                     <div class="col-lg-5 d-flex justify-content-center my-2 my-lg-0"> 
                                         <button type="submit" class="btn btn-dark mb-3 btn-lg" id="input-button">SIGN UP</button> 
@@ -75,12 +84,8 @@
         </div>
     </section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <!--
-  <script src="assets/js/main.js"></script>
-  -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

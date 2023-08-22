@@ -8,7 +8,7 @@ body {
     font-weight         : bold;
 }
 #navbar-logo {
-    max-width           : 80px;
+    max-width           : 40px;
     max-height          : auto;
 }
 .video {
@@ -22,35 +22,36 @@ input[type="radio"] {
     #brand-name {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : bold;
-        letter-spacing  : 1.25rem;
-        line-height     : 0.75;
+        letter-spacing  : 20px;
+        line-height     : 30px;
         text-align      : center;
-        font-size       : 10vw;
+        font-size       : 80px;
     }
     #brand-description {
         font-family     : 'Open Sans', sans-serif;
         font-weight     : 700;
-        line-height     : 0.75;
+        line-height     : 30px;
         text-align      : center;
-        font-size       : 3vw;
-        letter-spacing  : 0.125rem;
+        font-size       : 19px;
+        letter-spacing  : 2px;
     }
     #email-label {
-        font-size       : 60vw;
         font-family     : 'Open Sans', sans-serif;
         font-weight     : 500;
-        letter-spacing  : 0.25rem;
-        font-size       : 3vw;
+        font-size       : 27px;
+        letter-spacing  : 3px;
     }
     #input-email {
-        font-size       : 3vw;
+        font-family     : 'Varela Round', sans-serif;
+        font-weight     : 400;
+        font-size       : 20px;
     }
     #input-button {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : 400;
-        font-size       : 3vw;
-        padding-right   : 75px;
-        padding-left    : 75px;
+        font-size       : 20px;
+        padding-right   : 195px;
+        padding-left    : 195px;
     }
     #learn-more-video {
         max-width       : 100%;
@@ -149,37 +150,36 @@ input[type="radio"] {
     #brand-name {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : bold;
-        letter-spacing  : 1.25rem;
-        line-height     : 0.75;
+        letter-spacing  : 5px;
+        line-height     : 75px;
         text-align      : center;
-        font-size       : 10vw;
+        font-size       : 112px;
     }
     #brand-description {
         font-family     : 'Open Sans', sans-serif;
         font-weight     : 700;
-        line-height     : 0.75;
+        line-height     : 50px;
         text-align      : center;
-        font-size       : 3vw;
-        letter-spacing  : 0.125rem;
+        font-size       : 22px;
+        letter-spacing  : 1.5px;
     }
     #email-label {
-        font-size       : 60vw;
+        font-size       : 31px;
         font-family     : 'Open Sans', sans-serif;
         font-weight     : 500;
-        letter-spacing  : 0.25rem;
-        font-size       : 3vw;
+        letter-spacing  : 2px;
     }
     #input-email {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : 400;
-        font-size       : 3vw;
+        font-size       : 26px;
     }
     #input-button {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : 400;
-        font-size       : 3vw;
-        padding-right  : 75px;
-        padding-left   : 75px;
+        font-size       : 26px;
+        padding-right  : 202px;
+        padding-left   : 202px;
     }
     #learn-more-video {
         max-width       : 100%;
@@ -290,37 +290,37 @@ input[type="radio"] {
     #brand-name {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : bold;
-        letter-spacing  : 1.25rem;
-        line-height     : 0.75;
+        letter-spacing  : 15px;
+        line-height     : 100px;
         text-align      : center;
-        font-size       : 8vw;
+        font-size       : 140px;
     }
     #brand-description {
         font-family     : 'Open Sans', sans-serif;
         font-weight     : 700;
-        line-height     : 0.75;
+        line-height     : 50px;
         text-align      : center;
-        font-size       : 2vw;
-        letter-spacing  : 0.125rem;
+        font-size       : 25px;
+        letter-spacing  : 4.5px;
     }
     #email-label {
-        font-size       : 60vw;
+        font-size       : 36px;
         font-family     : 'Open Sans', sans-serif;
         font-weight     : 500;
-        letter-spacing  : 0.25rem;
-        font-size       : 2.5vw;
+        letter-spacing  : 6px;
     }
     #input-email {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : 400;
-        font-size       : 2.5vw;
+        font-size       : 35px;
     }
     #input-button {
         font-family     : 'Varela Round', sans-serif;
         font-weight     : 400;
-        font-size       : 2.5vw;
-        padding-right   : 20px;
-        padding-left    : 20px; 
+        font-size       : 35px;
+        letter-spacing  : 3px;
+        padding-right   : 263px;
+        padding-left    : 263px; 
     }
     #learn-more-video {
         max-width       : 100%;
@@ -425,37 +425,38 @@ input[type="radio"] {
 }
 @media screen and (min-width: 992px) {
     #brand-name {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : bold;
-    letter-spacing      : 1.25rem;
-    line-height         : 0.75;
-    text-align          : center;
-        font-size       : 3.5vw;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : bold;
+        letter-spacing      : 1.25rem;
+        line-height         : 0.75rem;
+        text-align          : center;
+        font-size           : 2.5rem;
     }
     #brand-description {
-    font-family         : 'Open Sans', sans-serif;
-    font-weight         : 700;
-    line-height         : 0.75;
-    text-align          : center;
-        font-size       : 1.0vw;
-        letter-spacing  : 0.0625rem;
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        line-height         : 0.75rem;
+        text-align          : center;
+        font-size           : 0.8rem;
+        letter-spacing      : 0.03125rem;
     }
     #email-label {
-    font-size           : 60vw;
-    font-family         : 'Open Sans', sans-serif;
-    font-weight         : 500;
-    letter-spacing      : 0.25rem;
-        font-size       : 1.0vw;
+        font-size           : 0.8rem;
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 500;
+        letter-spacing      : 0.25rem;
     }
     #input-email {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : 400;
-        font-size       : 1.25vw;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : 400;
+        font-size           : 1.1rem;
     }
     #input-button {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : 400;
-        font-size       : 1.25vw;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : 400;
+        font-size           : 1.1rem;
+        padding-left        : 0.25rem;
+        padding-right       : 0.25rem;
     }
     #learn-more-video {
         max-width       : 440px;
@@ -561,35 +562,36 @@ input[type="radio"] {
     #brand-name {
     font-family         : 'Varela Round', sans-serif;
     font-weight         : bold;
-    letter-spacing      : 1.25rem;
+    letter-spacing      : 1.125rem;
     line-height         : 0.75;
     text-align          : center;
-        font-size       : 55px;
+        font-size       : 3.5rem;
     }
     #brand-description {
-    font-family         : 'Open Sans', sans-serif;
-    font-weight         : 700;
-    line-height         : 0.75;
-    text-align          : center;
-        font-size       : 13.5px;
-        letter-spacing  : 0.125rem;
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        line-height         : 0.75rem;
+        text-align          : center;
+        font-size           : 0.95rem;
+        letter-spacing      : 0.0625rem;
     }
     #email-label {
-    font-size           : 60vw;
-    font-family         : 'Open Sans', sans-serif;
-    font-weight         : 500;
-    letter-spacing      : 0.25rem;
-        font-size       : 15.5px;
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 500;
+        letter-spacing      : 0.25rem;
+        font-size           : 1.0625rem;
     }
     #input-email {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : 400;
-        font-size       : 17.5px;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : 400;
+        font-size           : 1.15rem;
     }
     #input-button {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : 400;
-        font-size       : 17.5px;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : 400;
+        font-size           : 1.15rem;
+        padding-right       : 0.5rem;
+        padding-left        : 0.5rem;
     }
     #learn-more-video {
         max-width       : 542px;
@@ -693,37 +695,40 @@ input[type="radio"] {
 }
 @media screen and (min-width: 1400px) {
     #brand-name {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : bold;
-    letter-spacing      : 1.25rem;
-    line-height         : 0.75;
-    text-align          : center;
-        font-size       : 55px;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : bold;
+        letter-spacing      : 1.25rem;
+        line-height         : 1rem;
+        text-align          : center;
+        font-size           : 4rem;
     }
     #brand-description {
-    font-family         : 'Open Sans', sans-serif;
-    font-weight         : 700;
-    line-height         : 0.75;
-    text-align          : center;
-        font-size       : 13.5px;
-        letter-spacing  : 0.125rem;
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        line-height         : 2.5rem;
+        text-align          : center;
+        font-size           : 1.07rem;
+        letter-spacing      : 0.0625rem;
+        margin-right        : 0.5rem;
     }
     #email-label {
-    font-size           : 60vw;
-    font-family         : 'Open Sans', sans-serif;
-    font-weight         : 500;
-    letter-spacing      : 0.25rem;
-        font-size       : 15.5px;
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 500;
+        letter-spacing      : 0.25rem;
+        font-size           : 1.25rem;
+        margin-right        : 0.5rem;
     }
     #input-email {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : 400;
-        font-size       : 17.5px;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : 400;
+        font-size           : 1.25rem;
     }
     #input-button {
-    font-family         : 'Varela Round', sans-serif;
-    font-weight         : 400;
-        font-size       : 17.5px;
+        font-family         : 'Varela Round', sans-serif;
+        font-weight         : 400;
+        font-size           : 1.25rem;
+        padding-right       : 0.5rem;
+        padding-left        : 0.5rem;
     }
     #learn-more-video {
         max-width       : 542px;
