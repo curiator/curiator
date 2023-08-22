@@ -55,8 +55,8 @@ input[type="radio"] {
         font-weight     : 400;
         font-size       : 4vw;
         letter-spacing  : 0.1vw;
-        padding-right   : 34.8vw;
-        padding-left    : 34.8vw;
+        padding-right   : 34vw;
+        padding-left    : 34vw;
     }
     #learn-more-video {
         max-width       : 100%;
@@ -213,8 +213,8 @@ input[type="radio"] {
         font-weight     : 400;
         font-size       : 4vw;
         letter-spacing  : 0.385vw;
-        padding-right   : 37vw;
-        padding-left    : 37vw;
+        padding-right   : 36.5vw;
+        padding-left    : 36.5vw;
     }
     #learn-more-video {
         max-width       : 100%;
