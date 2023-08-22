@@ -145,6 +145,34 @@ input[type="radio"] {
         background          : rgba(255, 255, 255, 0.5);
         border-radius       : 50px;
     }
+    .user-tx-ico {
+        max-width           : 2.5rem;
+        max-height          : auto;
+        font-size           : 2.5rem;
+        color               : black;
+    }
+    .user-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 1.75rem;
+        letter-spacing      : 0.25rem;
+        color               : black;
+        text-align     : center;
+    }
+    .p-tx-ico {
+        max-height          : auto;
+        max-width           : 50px;
+        font-size           : 50px;
+        color               : black;
+    }
+    .p-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 30px;
+        letter-spacing      : 4px;
+        color               : black;
+        text-align     : center;
+    }
 }
 @media screen and (min-width: 576px) {
     #brand-name {
@@ -285,6 +313,34 @@ input[type="radio"] {
         background          : rgba(255, 255, 255, 0.5);
         border-radius       : 50px;
     }
+    .user-tx-ico {
+        max-width           : 3rem;
+        max-height          : auto;
+        font-size           : 3rem;
+        color               : black;
+    }
+    .user-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 2rem;
+        letter-spacing      : 0.25rem;
+        color               : black;
+        text-align     : center;
+    }
+    .p-tx-ico {
+        max-height          : auto;
+        max-width           : 40px;
+        font-size           : 40px;
+        color               : black;
+    }
+    .p-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 30px;
+        letter-spacing      : 3px;
+        color               : black;
+        text-align     : center;
+    }
 }
 @media screen and (min-width: 768px) {
     #brand-name {
@@ -422,6 +478,34 @@ input[type="radio"] {
         background          : rgba(255, 255, 255, 0.5);
         border-radius       : 50px;
     }
+    .user-tx-ico {
+        max-width           : 5rem;
+        max-height          : auto;
+        font-size           : 5rem;
+        color               : black;
+    }
+    .user-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 2.5rem;
+        letter-spacing      : 0.25rem;
+        color               : black;
+        text-align     : center;
+    }
+    .p-tx-ico {
+        max-height          : auto;
+        max-width           : 60px;
+        font-size           : 60px;
+        color               : black;
+    }
+    .p-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 50px;
+        letter-spacing      : 2px;
+        color               : black;
+        text-align     : center;
+    }
 }
 @media screen and (min-width: 992px) {
     #brand-name {
@@ -557,6 +641,34 @@ input[type="radio"] {
         background          : rgba(255, 255, 255, 0.5);
         border-radius       : 50px;
     }
+    .user-tx-ico {
+        max-width           : 40px;
+        max-height          : auto;
+        font-size           : 40px;
+        color               : black;
+    }
+    .user-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 20px;
+        letter-spacing      : 1.6px;
+        color               : black;
+        text-align     : center;
+    }
+    .p-tx-ico {
+        max-height          : auto;
+        max-width           : 50px;
+        font-size           : 50px;
+        color               : black;
+    }
+    .p-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 30px;
+        letter-spacing      : 2px;
+        color               : black;
+        text-align     : center;
+    }
 }
 @media screen and (min-width: 1200px) {
     #brand-name {
@@ -691,6 +803,34 @@ input[type="radio"] {
         margin              : 15rem 15rem;
         background          : rgba(255, 255, 255, 0.5);
         border-radius       : 50px;
+    }
+    .user-tx-ico {
+        max-width           : 45px;
+        max-height          : auto;
+        font-size           : 45px;
+        color               : black;
+    }
+    .user-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 24px;
+        letter-spacing      : 2px;
+        color               : black;
+        text-align     : center;
+    }
+    .p-tx-ico {
+        max-height          : auto;
+        max-width           : 60px;
+        font-size           : 60px;
+        color               : black;
+    }
+    .p-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 35px;
+        letter-spacing      : 2px;
+        color               : black;
+        text-align     : center;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -828,5 +968,33 @@ input[type="radio"] {
         margin              : 15rem 15rem;
         background          : rgba(255, 255, 255, 0.5);
         border-radius       : 50px;
+    }
+    .user-tx-ico {
+        max-width           : 50px;
+        max-height          : auto;
+        font-size           : 50px;
+        color               : black;
+    }
+    .user-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 27px;
+        letter-spacing      : 2.5px;
+        color               : black;
+        text-align     : center;
+    }
+    .p-tx-ico {
+        max-height          : auto;
+        max-width           : 70px;
+        font-size           : 70px;
+        color               : black;
+    }
+    .p-tx-txt {
+        font-family         : 'Open Sans', sans-serif;
+        font-weight         : 700;
+        font-size           : 40px;
+        letter-spacing      : 2px;
+        color               : black;
+        text-align     : center;
     }
 }
