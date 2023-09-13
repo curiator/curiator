@@ -15,7 +15,6 @@ body {
   40% { transform: translateY(-30px); }
   60% { transform: translateY(-15px); }
 }
-
 .nav-link {
     font-family         : 'Varela Round', sans-serif;
 }
@@ -247,6 +246,32 @@ input[type="radio"] {
         color               : black;
         text-align     : center;
     }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 1.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 0.75rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 19% 0% 0% 0%;
+    }
 }
 @media screen and (min-width: 388px) {
     #brand-name {
@@ -454,6 +479,32 @@ input[type="radio"] {
         letter-spacing      : 4px;
         color               : black;
         text-align     : center;
+    }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 17.5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 2.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 1.25rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 7% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 14% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 19% 0% 0% 0%;
     }
 }
 @media screen and (min-width: 576px) {
@@ -673,6 +724,32 @@ input[type="radio"] {
         color               : black;
         text-align     : center;
     }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 17.5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 3rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 1.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 7% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 14% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 19% 0% 0% 0%;
+    }
 }
 @media screen and (min-width: 768px) {
     #brand-name {
@@ -888,6 +965,32 @@ input[type="radio"] {
         letter-spacing      : 2px;
         color               : black;
         text-align     : center;
+    }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 17.5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 3rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 1.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 7% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 14% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 19% 0% 0% 0%;
     }
 }
 @media screen and (min-width: 992px) {
@@ -1111,6 +1214,32 @@ input[type="radio"] {
         color               : black;
         text-align     : center;
     }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 17.5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 3rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 1.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 7% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 14% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 15% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 19% 0% 0% 0%;
+    }
 }
 @media screen and (min-width: 1200px) {
     #brand-name {
@@ -1331,6 +1460,32 @@ input[type="radio"] {
         letter-spacing      : 2px;
         color               : black;
         text-align     : center;
+    }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 17.5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 3rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 1.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 7% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 10% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 11% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 11% 0% 0% 0%;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -1555,5 +1710,31 @@ input[type="radio"] {
         letter-spacing      : 2px;
         color               : black;
         text-align     : center;
+    }
+    #q-and-a {
+        text-align          : center;
+        margin-top          : 17.5vh;
+        margin-left         : 22.5%;
+        margin-right        : 25.5%;
+    }
+    #about-me-q {
+        font-size           : 3rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-a {
+        font-size           : 1.5rem;
+        font-family         : 'Varela Round', sans-serif;
+    }
+    #about-me-arrow-pg-1 {
+        margin: 10% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-2 {
+        margin: 10% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-3 {
+        margin: 11% 0% 0% 0%;
+    }
+    #about-me-arrow-pg-4 {
+        margin: 11% 0% 0% 0%;
     }
 }
