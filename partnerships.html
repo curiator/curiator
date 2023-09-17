@@ -47,6 +47,8 @@
             </div>
         </div>
     </nav>
+    <main>
+    <div>
     <div id="pg-1">
         <section class="d-flex align-items-center my-lg-5">
             <div class="container">
@@ -176,11 +178,6 @@
             <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-end"> </div>
             </div>
         </section>
-        <section>
-            <div class="arrow bounce" id="arrow-pg-1"> 
-                <i class="fa-solid fa-arrow-down fa-2x" id="bouncing-arrow-anchor"></i> 
-            </div>
-        </section>
     </div>
     <div id="pg-2">
         <section class="d-flex align-items-center my-lg-5 py-lg-4">
@@ -195,9 +192,6 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="arrow bounce" id="arrow-pg-2"> <i class="fa-solid fa-arrow-down fa-2x" id="bouncing-arrow-anchor"></i> </div>
-        </section>
         </div>
         <div id="pg-3">
         <section class="d-flex align-items-center my-lg-5 py-lg-4">
@@ -210,11 +204,6 @@
                         <img id="learn-more-copy-pg-3" src="./assets/images/learnmore-pg-3-copy.png" alt="">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="arrow bounce" id="arrow-pg-3"> 
-                <i class="fa-solid fa-arrow-down fa-2x" id="bouncing-arrow-anchor"></i> 
             </div>
         </section>
         </div>  
@@ -231,11 +220,6 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="arrow bounce" id="arrow-pg-4"> 
-                <i class="fa-solid fa-arrow-down fa-2x" id="bouncing-arrow-anchor"></i> 
-            </div>
-        </section>
         </div>
         <div id="pg-5">
         <section class="d-flex align-items-center my-lg-5 py-lg-4">
@@ -250,12 +234,24 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="arrow bounce" id="arrow-pg-5"> 
-                <a class="fa-solid fa-arrow-down fa-2x" id="bouncing-arrow-anchor" href="#"></a> 
-            </div>
-        </section>
         </div>
+
+    </div>
+    </main>
+    <div class="container">
+        <footer class="text-center border-top">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-4 d-flex text-center p-3 copyright-text">
+                © 2023 Curiate, Inc. All rights reserved.
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"> <a class="text-muted" href="mailto:contact@curiate.cc"> <i class="bi bi-envelope-fill" id="icon-social-email"></i> </a> </li>
+                    <li class="ms-3"> <a class="text-muted" href="https://www.instagram.com/curiate.cc/" target="_blank"> <i class="bi bi-instagram" id="icon-social-instagram"></i> </a> </li>
+                    <li class="ms-3"> <a class="text-muted" href="https://www.linkedin.com/company/curiateco/" target="_blank">  <i class="bi bi-linkedin" id="icon-social-linkedin"></i> </a> </li>
+                  </ul>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b32abd3e1b.js" crossorigin="anonymous"></script>
@@ -317,11 +313,8 @@
             if(activePage < 0) activePage       = pages.length - 1;
             scroll(activePage)
         }
-        const bouncingArrows = document.getElementsByClassName('arrow');
-        for(let arIdx = 0; arIdx < bouncingArrows.length; arIdx++){
-            bouncingArrows[arIdx].addEventListener('click', scrollDown);
-        }
         window.onwheel = _.debounce((e) => {
+            console.log("firing")
             if(e.deltaY > 0) { scrollDown(); }
             else { scrollUp(); }
         }, 100, {"leading": true, "trailing": false});
