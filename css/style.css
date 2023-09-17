@@ -18,6 +18,26 @@ main {
 footer {
     flex-shrink: 0;
 }
+#dots-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc; /* Inactive dot color */
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: black; /* Active dot color */
+}
+
 
 .nav-link {
     font-family         : 'Varela Round', sans-serif;
