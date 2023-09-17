@@ -151,6 +151,26 @@
                 setActiveDot(activePage);
             });
         });
+        let touchStartY = 0;
+        let touchEndY = 0;
+        document.addEventListener('touchstart', (e) => {
+            touchStartY = e.changedTouches[0].screenY;
+        });
+        document.addEventListener('touchend', (e) => {
+            touchEndY = e.changedTouches[0].screenY;
+            const deltaY = touchEndY - touchStartY;
+            let currentPage = activePage;
+            let nextPage   = 0;
+            if(deltaY > 50) { 
+                nextPage    = currentPage - 1;
+                if(nextPage < 0)   nextPage = pages.length - 1;
+             }
+            else if(deltaY < -50) { 
+                nextPage    = (currentPage + 1) % pages.length;
+            }
+            scroll(currentPage, nextPage);
+            activePage = nextPage;
+        });
         window.onwheel = _.debounce((e) => {
             let currentPage = activePage;
             let nextPage   = 0;

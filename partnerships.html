@@ -350,8 +350,18 @@
                 setActiveDot(activePage);
             });
         });
+        let touchStartY = 0;
+        let touchEndY = 0;
+        document.addEventListener('touchstart', (e) => {
+            touchStartY = e.changedTouches[0].screenY;
+        });
+        document.addEventListener('touchend', (e) => {
+            touchEndY = e.changedTouches[0].screenY;
+            const deltaY = touchEndY - touchStartY;
+            if(deltaY > 50) { scrollUp(); }
+            else if(deltaY < -50) { scrollUp(); }
+        });
         window.onwheel = _.debounce((e) => {
-            console.log("firing")
             if(e.deltaY > 0) { scrollDown(); }
             else { scrollUp(); }
         }, 100, {"leading": true, "trailing": false});
