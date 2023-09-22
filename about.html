@@ -24,7 +24,6 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/easyScrollDots.min.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body style="background-image:url(./assets/images/about-me-pg-1-bg.png);background-size:cover;background-position:center center;background-attachment: fixed;">
@@ -109,7 +108,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
-    <script src="js/easyScrollDots.min.js"></script>
     <script type="application/javascript">
         // Function to update the active dot based on the currently viewed section
         const dots = document.querySelectorAll('.dot');
@@ -139,6 +137,7 @@
         function setActivePage(activeIndex) {
             pages.forEach((page, index) => {
                 if (index === activeIndex) {
+                    setBGImage(index);
                     pages[index].style.display = 'block';
                 } else {
                     pages[index].style.display = 'none';
@@ -149,15 +148,25 @@
         
         const scroll                            = (currentPage, nextPage) => {
             setBGImage(nextPage);
-            pages[currentPage].style.display     = 'None';
-            pages[nextPage].style.display      = 'block';
+            // add slide-out-top animation to current page
+            pages[currentPage].style.transition  = 'opacity 0.150s ease-out';
+            pages[currentPage].style.opacity     = 0;
+            setTimeout(() => {
+                pages[currentPage].style.display = 'none';
+            }, 150);
+            pages[nextPage].style.transition     = 'opacity 0.150s ease-in';
+            pages[nextPage].style.opacity        = '1';
+            setTimeout(() => {
+                pages[nextPage].style.display      = 'block';
+            }, 150);
             setActiveDot(nextPage);
         }
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                setActivePage(index);
-                activePage = index;
-                setActiveDot(activePage);
+                currentPage = activePage;
+                nextPage    = index;
+                scroll(currentPage, nextPage);
+                activePage  = nextPage;
             });
         });
         let touchStartY = 0;
@@ -192,7 +201,7 @@
             }
             scroll(currentPage, nextPage);
             activePage = nextPage;
-        }, 100, {"leading": true, "trailing": false});
+        }, 300, {"leading": true, "trailing": false});
     </script>
 
 </body>

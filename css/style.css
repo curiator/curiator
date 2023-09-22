@@ -18,6 +18,7 @@ main {
 footer {
     flex-shrink: 0;
 }
+
 #dots-container {
     position: fixed;
     top: 50%;
@@ -26,11 +27,11 @@ footer {
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 7.5px;
+    height: 7.5px;
     background-color: #ccc; /* Inactive dot color */
     border-radius: 50%;
-    margin: 10px 0;
+    margin: 7.5px 0;
     cursor: pointer;
 }
 
