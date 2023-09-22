@@ -313,41 +313,28 @@
         }
 
         let activePage     = 0;
-        function setActivePage(activeIndex) {
-            pages.forEach((page, index) => {
-                if (index === activeIndex) {
-                    pages[index].style.display = 'block';
-                } else {
-                    pages[index].style.display = 'none';
-                }
-            });
-        }
-        const scroll                            = (pgIdx) => {
-            if(pgIdx == 0) setBodyStyle();
+        const scroll                            = (currentPage, nextPage) => {
+            if(nextPage == 0) setBodyStyle();
             else clearBodyStyle();
-            pages[activePage].style.display     = 'block';
-            pages[activePage].style.opacity     = 0;
-            pages[activePage].style.transition  = 'opacity 0.50s ease-in-out';
-            pages[activePage].style.opacity     = 1;
-            setActiveDot(pgIdx)
-        }
-        const scrollDown                        = () => {
-            pages[activePage].style.display     = 'none';
-            activePage                          = (activePage + 1) % pages.length;       
-            scroll(activePage)
-        }
-        const scrollUp                          = () => {
-            pages[activePage].style.display     = 'none';
-            activePage                          = activePage - 1
-            if(activePage < 0) activePage       = pages.length - 1;
-            scroll(activePage)
+            pages[currentPage].style.transition  = 'opacity 0.150s ease-out';
+            pages[currentPage].style.opacity     = 0;
+            setTimeout(() => {
+                pages[currentPage].style.display = 'none';
+            }, 150);
+            pages[nextPage].style.transition     = 'opacity 0.150s ease-in';
+            pages[nextPage].style.opacity        = '1';
+            setTimeout(() => {
+                pages[nextPage].style.display      = 'block';
+            }, 150);
+            setActiveDot(nextPage)
         }
         // Event listener for dot clicks
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                setActivePage(index);
-                activePage = index;
-                setActiveDot(activePage);
+                currentPage = activePage;
+                nextPage    = index;
+                scroll(currentPage, nextPage);
+                activePage  = nextPage;
             });
         });
         let touchStartY = 0;
@@ -358,12 +345,28 @@
         document.addEventListener('touchend', (e) => {
             touchEndY = e.changedTouches[0].screenY;
             const deltaY = touchEndY - touchStartY;
-            if(deltaY > 50) { scrollUp(); }
-            else if(deltaY < -50) { scrollUp(); }
+            let currentPage = activePage;
+            let nextPage    = 0;
+            if(deltaY > 50) { 
+                nextPage = currentPage - 1;
+                if(nextPage < 0) nextPage = pages.length - 1;
+            }
+            else if(deltaY < -50) {
+                nextPage = (currentPage+1) % pages.length;
+            }
+            scroll(currentPage, nextPage);
+            activePage      = nextPage;
         });
         window.onwheel = _.debounce((e) => {
-            if(e.deltaY > 0) { scrollDown(); }
-            else { scrollUp(); }
+            let currentPage = activePage;
+            let nextPage    = 0;
+            if(e.deltaY > 0) { nextPage = (currentPage+1) % pages.length; }
+            else { 
+                nextPage = currentPage - 1;
+                if(nextPage < 0) nextPage = pages.length - 1;
+            }
+            scroll(currentPage, nextPage)
+            activePage      = nextPage;
         }, 300, {"leading": true, "trailing": false});
     </script>
 
