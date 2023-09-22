@@ -138,6 +138,7 @@ input[type="radio"] {
         margin: 3% 0% 0% 0%;
     }
     #learn-more-copy-pg-2 {
+        margin-top     : 1.5rem;
         max-width      : 100%;
         max-height     : auto;
     }
@@ -146,6 +147,7 @@ input[type="radio"] {
         max-height     : auto;
     }
     #learn-more-copy-pg-3 {
+        margin-top     : 1.5rem;
         max-width      : 100%;
         max-height     : auto;
     }
@@ -154,6 +156,7 @@ input[type="radio"] {
         max-height     : auto;
     }
     #learn-more-copy-pg-4 {
+        margin-top     : 1.5rem;
         max-width      : 100%;
         max-height     : auto;
     }
@@ -166,6 +169,7 @@ input[type="radio"] {
         max-height     : auto;
     }
     #learn-more-img-pg-5 {
+        margin-top     : 1.5rem;
         max-width      : 100%;
         max-height     : auto;
     }
@@ -378,6 +382,7 @@ input[type="radio"] {
         margin: 3% 0% 0% 0%;
     }
     #learn-more-copy-pg-2 {
+
         max-width      : 100%;
         max-height     : auto;
     }
@@ -1126,6 +1131,7 @@ input[type="radio"] {
         margin: 1% 0% 0% 0%;
     }
     #learn-more-copy-pg-2 {
+        margin-top     : 0;
         max-width      : auto;
         height         : 100%;
         max-height     : 405px;
@@ -1136,6 +1142,7 @@ input[type="radio"] {
         max-height     : 405px;
     }
     #learn-more-copy-pg-3 {
+        margin-top     : 0;
         max-width      : auto;
         height         : 100%;
         max-height     : 405px;
@@ -1146,6 +1153,7 @@ input[type="radio"] {
         max-height     : 405px;
     }
     #learn-more-copy-pg-4 {
+        margin-top     : 0;
         max-width      : auto;
         height         : 100%;
         max-height     : 405px;
@@ -1161,6 +1169,7 @@ input[type="radio"] {
         max-height     : 405px;
     }
     #learn-more-img-pg-5 {
+        margin-top     : 0;
         max-width      : auto;
         height         : 100%;
         max-height     : 405px;
