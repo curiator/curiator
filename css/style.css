@@ -532,7 +532,7 @@ input[type="radio"] {
     }
     #q-and-a {
         text-align          : center;
-        margin-top          : 17.5vh;
+        margin-top          : 11vh;
         margin-left         : 22.5%;
         margin-right        : 25.5%;
     }
@@ -782,7 +782,7 @@ input[type="radio"] {
     }
     #q-and-a {
         text-align          : center;
-        margin-top          : 17.5vh;
+        margin-top          : 11vh;
         margin-left         : 22.5%;
         margin-right        : 25.5%;
     }
@@ -984,8 +984,6 @@ input[type="radio"] {
     .btn-schedule-call {
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 700;
-        font-size           : 1rem;
-        letter-spacing      : 0.125rem;
         border              : 0.4rem solid black;
         border-radius       : 25px;
         padding             : 0.5rem 0.5rem;
@@ -1030,7 +1028,7 @@ input[type="radio"] {
     }
     #q-and-a {
         text-align          : center;
-        margin-top          : 17.5vh;
+        margin-top          : 12vh;
         margin-left         : 22.5%;
         margin-right        : 25.5%;
     }
@@ -1299,7 +1297,7 @@ input[type="radio"] {
     }
     #q-and-a {
         text-align          : center;
-        margin-top          : 17.5vh;
+        margin-top          : 13vh;
         margin-left         : 22.5%;
         margin-right        : 25.5%;
     }
@@ -1551,7 +1549,7 @@ input[type="radio"] {
     }
     #q-and-a {
         text-align          : center;
-        margin-top          : 17.5vh;
+        margin-top          : 12vh;
         margin-left         : 22.5%;
         margin-right        : 25.5%;
     }
@@ -1805,7 +1803,7 @@ input[type="radio"] {
     }
     #q-and-a {
         text-align          : center;
-        margin-top          : 17.5vh;
+        margin-top          : 11vh;
         margin-left         : 22.5%;
         margin-right        : 25.5%;
     }

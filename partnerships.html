@@ -50,7 +50,7 @@
     <main>
     <div>
     <div id="pg-1">
-        <section class="d-flex align-items-center my-lg-5">
+        <section class="d-flex align-items-center my-lg-4">
             <div class="container">
             <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-around order-2 order-lg-1">
@@ -180,7 +180,7 @@
         </section>
     </div>
     <div id="pg-2">
-        <section class="d-flex align-items-center my-lg-5 py-lg-4">
+        <section class="d-flex align-items-center my-lg-4 py-lg-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 d-flex justify-content-around order-2 order-lg-1">
@@ -194,7 +194,7 @@
         </section>
         </div>
         <div id="pg-3">
-        <section class="d-flex align-items-center my-lg-5 py-lg-4">
+        <section class="d-flex align-items-center my-lg-4 py-lg-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 order-1 order-lg-1 d-flex justify-content-start">
@@ -208,7 +208,7 @@
         </section>
         </div>  
         <div id="pg-4">
-        <section class="d-flex align-items-center my-lg-5 py-lg-4">
+        <section class="d-flex align-items-center my-lg-4 py-lg-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 d-flex justify-content-start order-2 order-lg-1">
@@ -222,7 +222,7 @@
         </section>
         </div>
         <div id="pg-5">
-        <section class="d-flex align-items-center my-lg-5 py-lg-4">
+        <section class="d-flex align-items-center my-lg-4 py-lg-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 d-flex justify-content-start order-2 order-lg-1">
@@ -316,16 +316,16 @@
         const scroll                            = (currentPage, nextPage) => {
             if(nextPage == 0) setBodyStyle();
             else clearBodyStyle();
-            pages[currentPage].style.transition  = 'opacity 0.150s ease-out';
+            pages[currentPage].style.transition  = 'opacity 0.050s ease-out';
             pages[currentPage].style.opacity     = 0;
             setTimeout(() => {
                 pages[currentPage].style.display = 'none';
-            }, 150);
-            pages[nextPage].style.transition     = 'opacity 0.150s ease-in';
+            }, 50);
+            pages[nextPage].style.transition     = 'opacity 0.050s ease-in';
             pages[nextPage].style.opacity        = '1';
             setTimeout(() => {
                 pages[nextPage].style.display      = 'block';
-            }, 150);
+            }, 50);
             setActiveDot(nextPage)
         }
         // Event listener for dot clicks
@@ -347,11 +347,11 @@
             const deltaY = touchEndY - touchStartY;
             let currentPage = activePage;
             let nextPage    = 0;
-            if(deltaY > 50) { 
+            if(deltaY > 150) { 
                 nextPage = currentPage - 1;
                 if(nextPage < 0) nextPage = pages.length - 1;
             }
-            else if(deltaY < -50) {
+            else if(deltaY < -150) {
                 nextPage = (currentPage+1) % pages.length;
             }
             scroll(currentPage, nextPage);
@@ -367,9 +367,9 @@
             }
             scroll(currentPage, nextPage)
             activePage      = nextPage;
-        }, 300, {"leading": true, "trailing": false});
+        }, 68, {"leading": true, "trailing": false});
     </script>
 
-<body/>
+</body>
 
 </html>

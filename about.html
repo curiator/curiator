@@ -134,31 +134,21 @@
                 }
             });
         }
-        function setActivePage(activeIndex) {
-            pages.forEach((page, index) => {
-                if (index === activeIndex) {
-                    setBGImage(index);
-                    pages[index].style.display = 'block';
-                } else {
-                    pages[index].style.display = 'none';
-                }
-            });
-        }
         let activePage     = 0;
         
         const scroll                            = (currentPage, nextPage) => {
             setBGImage(nextPage);
             // add slide-out-top animation to current page
-            pages[currentPage].style.transition  = 'opacity 0.150s ease-out';
+            pages[currentPage].style.transition  = 'opacity 0.050s ease-out';
             pages[currentPage].style.opacity     = 0;
             setTimeout(() => {
                 pages[currentPage].style.display = 'none';
-            }, 150);
-            pages[nextPage].style.transition     = 'opacity 0.150s ease-in';
+            }, 50);
+            pages[nextPage].style.transition     = 'opacity 0.050s ease-in';
             pages[nextPage].style.opacity        = '1';
             setTimeout(() => {
                 pages[nextPage].style.display      = 'block';
-            }, 150);
+            }, 50);
             setActiveDot(nextPage);
         }
         dots.forEach((dot, index) => {
@@ -179,11 +169,11 @@
             const deltaY = touchEndY - touchStartY;
             let currentPage = activePage;
             let nextPage   = 0;
-            if(deltaY > 50) { 
+            if(deltaY > 150) { 
                 nextPage    = currentPage - 1;
                 if(nextPage < 0)   nextPage = pages.length - 1;
              }
-            else if(deltaY < -50) { 
+            else if(deltaY < -150) { 
                 nextPage    = (currentPage + 1) % pages.length;
             }
             scroll(currentPage, nextPage);
@@ -201,7 +191,7 @@
             }
             scroll(currentPage, nextPage);
             activePage = nextPage;
-        }, 300, {"leading": true, "trailing": false});
+        }, 68, {"leading": true, "trailing": false});
     </script>
 
 </body>
