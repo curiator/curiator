@@ -66,6 +66,7 @@ input[type="radio"] {
 }
 @media screen and (min-width: 200px) {
     #icon-social-email {
+        vertical-align: middle;
         font-size       : 1rem;
         color       : black;
     }
@@ -1056,10 +1057,12 @@ input[type="radio"] {
 @media screen and (min-width: 992px) {
 
     #icon-social-email {
-        font-size       : 1.125rem;
+        vertical-align: top;
+        font-size       : 1.25rem;
         color           : black;
     }
     #icon-social-instagram, #icon-social-linkedin {
+        vertical-align: middle;
         font-size       : 1rem;
         color           : black;
     }
@@ -1087,23 +1090,24 @@ input[type="radio"] {
         margin-right        : 0.8rem
     }
     #email-label {
-        font-size           : 0.76rem;
+        font-size           : 0.79rem;
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 500;
-        letter-spacing      : 0.192rem;
+        letter-spacing      : 0.15rem;
         margin-right        : 0.7rem;
     }
     #input-email {
         font-family         : 'Varela Round', sans-serif;
         font-weight         : 400;
-        font-size           : 0.76rem;
+        font-size           : 0.72rem;
     }
     #input-button {
         font-family         : 'Varela Round', sans-serif;
         font-weight         : 400;
-        font-size           : 0.76rem;
-        padding-left        : 0.05rem;
-        padding-right       : 0.05rem;
+        font-size           : 0.72rem;
+        padding-left        : 0.5rem;
+        padding-right       : 0.5rem;
+        letter-spacing      : 0.1rem;
         margin-right        : 0.2rem
     }
     #learn-more-video {
@@ -1347,19 +1351,22 @@ input[type="radio"] {
     #email-label {
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 500;
-        letter-spacing      : 0.23rem;
-        font-size           : 0.92rem;
+        letter-spacing      : 0.20rem;
+        font-size           : 0.90rem;
         margin-right        : 0.8rem
     }
     #input-email {
         font-family         : 'Varela Round', sans-serif;
         font-weight         : 400;
-        font-size           : 0.92rem;
+        font-size           : 0.85rem;
     }
     #input-button {
         font-family         : 'Varela Round', sans-serif;
         font-weight         : 400;
-        font-size           : 0.92rem;
+        font-size           : 0.85rem;
+        letter-spacing      : 0.1rem;
+        padding-right       : 0.75rem;
+        padding-left        : 0.75rem;
         margin-right        : 0.2rem;
     }
     #learn-more-video {
@@ -1599,21 +1606,24 @@ input[type="radio"] {
     #email-label {
         font-family         : 'Open Sans', sans-serif;
         font-weight         : 500;
-        letter-spacing      : 0.25rem;
+        letter-spacing      : 0.2rem;
         font-size           : 1rem;
         margin-right        : 0.7rem;
     }
     #input-email {
         font-family         : 'Varela Round', sans-serif;
         font-weight         : 400;
-        font-size           : 1rem;
+        font-size           : 0.9rem;
     }
     #input-button {
         font-family         : 'Varela Round', sans-serif;
         font-weight         : 400;
-        font-size           : 1rem;
+        font-size           : 0.9rem;
         margin-right        : 0.4rem;
-        text-align          : center
+        padding-left        : 1rem;
+        padding-right       : 1rem;
+        letter-spacing      : 0.1rem;
+        text-align : center;
     }
     #learn-more-video {
         width           : 100%;
